@@ -12,8 +12,11 @@ class App < Sinatra::Base
 
 
   post '/new' do
-    @name = params[:name]
-    Puppy.new(@name)
+    params[:name]
+    params[:age]
+    params[:breed]
+    
+    Puppy.new()
     #@analyzed_text = TextAnalyzer.new(text_from_user)
     erb :display_puppy
   end
