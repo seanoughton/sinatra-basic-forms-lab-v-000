@@ -10,9 +10,6 @@ class App < Sinatra::Base
     erb :create_puppy
   end
 
-  get '/create_puppy' do
-    erb :create_puppy
-  end
 
   post '/' do
     #text_from_user = params[:user_text]
