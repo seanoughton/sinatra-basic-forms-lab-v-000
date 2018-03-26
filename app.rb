@@ -16,8 +16,8 @@ class App < Sinatra::Base
     age = params[:age]
     breed = params[:breed]
 
-    Puppy.new(name,breed,age)
-    #@analyzed_text = TextAnalyzer.new(text_from_user)
+    new_Puppy = .new(name,breed,age)
+    @name = 
     erb :display_puppy
   end
 
