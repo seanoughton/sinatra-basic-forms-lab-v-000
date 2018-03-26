@@ -12,7 +12,7 @@ class App < Sinatra::Base
 
 
   post '/new' do
-    #text_from_user = params[:user_text]
+    @name = params[:name]
     #@analyzed_text = TextAnalyzer.new(text_from_user)
     erb :display_puppy
   end
